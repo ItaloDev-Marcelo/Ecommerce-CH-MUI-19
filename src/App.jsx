@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Mobile from './components/Nav/Mobile';
+import Desk from './components/Nav/Desk';
+import { Stack } from '@mui/material';
+import SlideMobileAndTablet from './components/Slides/SlideMobileAndTablet'
+import SlideDeskDevices from './components/Slides/SlideDeskDevices';
 
-function App() {
-  const [count, setCount] = useState(0)
+import Information from './components/information/index'
+
+export default function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Stack display={{ xs: 'block', lg: 'none' }}>
+        <Mobile />
+        <SlideMobileAndTablet />
+      </Stack>
+
+      <Stack display={{ xs: 'none', lg: 'block' }}>
+        <Desk />
+        <SlideDeskDevices />
+      </Stack>
+
+
+
+
     </>
   )
 }
 
-export default App
+
