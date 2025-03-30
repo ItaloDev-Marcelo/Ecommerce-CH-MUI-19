@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Data from './Data/index';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import Information from '../information/index'
+// import Information from '../information/index'
 
 export default function SliderForMobileDevices() {
     
@@ -32,17 +32,16 @@ export default function SliderForMobileDevices() {
               } )
             }
             <Stack className='btn-itens'>
-            <Button className='btn-left' onClick={NextItem}>
-                <KeyboardArrowRightIcon fontSize='large' color='#000' />
+            <Button className='btn-left'   onClick={PreviousItem } color='#000' >
+                <KeyboardArrowLeftIcon  fontSize='large' />
             </Button>
-            <Button className='btn-right'  onClick={PreviousItem }>
-                <KeyboardArrowLeftIcon  fontSize='large' color='#000' />
+            <Button className='btn-right' onClick={NextItem} color='#000' >
+                <KeyboardArrowRightIcon fontSize='large' />
             </Button>
+           
             </Stack>
              </Stack>
-        <Stack sx={{position: 'relative', top: '17rem', padding: '2em'}}>
-        <Information/>
-        </Stack>
+   
         </Stack>
     )
 } 
