@@ -5,7 +5,8 @@ import { Stack } from '@mui/material';
 import SlideMobileAndTablet from './components/Slides/SlideMobileAndTablet'
 import SlideDeskDevices from './components/Slides/SlideDeskDevices';
 
-import Information from './components/information/index'
+import Information from './components/cart/information'
+
 
 export default function App() {
 
@@ -23,7 +24,7 @@ export default function App() {
       </Stack>
 
      <Stack sx={{position: 'relative', top: {xs: '23rem', lg: '0'}, padding: '2em'}}>
-       <Information/>
+        <Information />
      </Stack>
 
 

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Data from './Data/index';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-// import Information from '../information/index'
 
 export default function SliderForMobileDevices() {
     

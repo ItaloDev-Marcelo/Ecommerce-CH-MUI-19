@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack,  Typography , Button} from '@mui/material';
 import Cart from '../../assets/images/icon-cart.svg';
 import minus from '../../assets/images/icon-minus.svg';
 import plus from  '../../assets/images/icon-plus.svg';
 
 export default function Information() {
+
+   const [cart, setCart] = useState(0);
+   // const [numberOfItems, setNumberOfItems] = useState(0);
+
+
+   // const hundleSubmitData = () => {
+   //    setNumberOfItems(cart)
+   // }
+
+
+   // const reset = () => {
+   //    setCart(0)
+   // }
+
+
   return (
      <Stack>
          <Stack component='section' maxWidth={{lg: '700px'}} marginTop='4em'>
@@ -20,12 +35,13 @@ export default function Information() {
             </Stack>
             <Stack sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}, alignItems: 'center', padding: '1em 0'}}>
                <Stack component='div' sx={{display: 'flex', flexDirection:'row', justifyContent: 'space-between', padding: '.5em', background: ' hsl(223, 64%, 98%)', borderRadius: '10px', width: {xs: '99%', lg: '37%'}}}>
-               <Button  ><img src={minus} alt='minus'/>  </Button>
-                <Button disabled sx={{fontWeight: 700, fontSize: '1.1em'}}  >0</Button>
-                <Button><img src={plus} alt='minus'/> </Button>
+               <Button width={{lg: '250'}} onClick={() => setCart(prev => prev <= 0 ? 0 : prev - 1) } ><img src={minus} alt='minus'/>  </Button>
+                <Button disabled sx={{fontWeight: 700, fontSize: '1.1em'}}  > {cart} </Button>
+                <Button onClick={() => setCart(prev => prev + 1) } ><img src={plus} alt='minus'/> </Button>
                </Stack>
                <Button id='orange-btn' sx={{backgroundColor: 'orange',color: '#000', fontWeight: 700, textTransform: 'lowercase', width: '100%',padding: '1em 0', height: '50px', marginTop: '1rem', borderRadius: '10px',textTransform: 'lowercase'}}> <img src={Cart} alt='cart-icon' style={{width: '20px', marginRight: '1em'}} />  <Typography  fontWeight='700' textTransform='capitalize'>A</Typography>  dd to cart</Button>
             </Stack>
+      
          </Stack>
      </Stack>
   )
