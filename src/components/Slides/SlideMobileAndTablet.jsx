@@ -32,10 +32,24 @@ export default function SliderForMobileDevices() {
               } )
             }
             <Stack className='btn-itens'>
-            <Button className='btn-left'   onClick={PreviousItem } color='#000' >
+            <Button className='btn-left' variant="contained"
+      sx={{
+        borderRadius: '50%',
+        width: 60,
+        height: 60,
+        minWidth: 0,
+        padding: 0,
+      }}   onClick={PreviousItem } color='#000' >
                 <KeyboardArrowLeftIcon  fontSize='large' />
             </Button>
-            <Button className='btn-right' onClick={NextItem} color='#000' >
+            <Button className='btn-right' variant="contained"
+      sx={{
+        borderRadius: '50%',
+        width: 60,
+        height: 60,
+        minWidth: 0,
+        padding: 0,
+      }} onClick={NextItem} color='#000' >
                 <KeyboardArrowRightIcon fontSize='large' />
             </Button>
            

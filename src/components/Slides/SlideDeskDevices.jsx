@@ -48,7 +48,7 @@ export default function SlideDeskDevices() {
            </Stack>
            </Stack>
         </Stack>
-        {newSlider && <Stack position='absolute' className='subSlder' ><UpSlider closeZone={closeZone}  /></Stack> } 
+        {newSlider && <Stack zIndex='100' className={newSlider ? 'subSlder active': 'subSlder'}   > <Stack  maxWidth='44%' position='relative' top='-2em'><UpSlider closeZone={closeZone}  /></Stack> </Stack> } 
         </>
     )
 }

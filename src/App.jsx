@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <>
-      <Stack display='flex'  flexDirection={{ xs: 'column', lg: 'row' }}>
+      <Stack display='flex'  flexDirection={{ xs: 'column', lg: 'row' }} padding={{xs: '0', lg: '0 13em'}}>
       <Stack display={{ xs: 'block', lg: 'none' }}>
         <Mobile />
         <SlideMobileAndTablet />

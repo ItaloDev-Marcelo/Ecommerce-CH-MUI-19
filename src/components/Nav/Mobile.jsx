@@ -18,10 +18,17 @@ export default function Mobile() {
 
     
     const DrawerList = (
-        <Box sx={{ width: 250, padding: '2em'}} role="presentation" >
+        <Box sx={{ width: 250, padding: '1em 0'}} role="presentation" >
            <Button color='red' backgroundColor='purple' onClick={toggleDrawer(false)}>
               <img src={Close} alt='' />
            </Button>
+           <ul id='menu-list'>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+           </ul>
         </Box>
       );
     
