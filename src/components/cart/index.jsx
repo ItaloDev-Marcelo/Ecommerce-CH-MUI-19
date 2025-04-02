@@ -24,7 +24,7 @@ export default function Cart() {
         </Stack>
      </Badge>
 
-       <Stack display={Result} position='absolute' top={{xs: '7rem', lg: '10rem'}} right={{xs: '1.1rem', lg: '15em'}} sx={{width: {xs: '325px', sm: '95%', lg: '325px'}  ,height:{xs: '200px', 'sm': '300px', lg: '200px'}  , backgroundColor: 'red'}}></Stack>
+       <Stack display={Result} position='absolute' top={{xs: '5.5rem', lg: '10rem'}} right={{xs: '.6rem', lg: '15em'}} sx={{width: {xs: '340px', sm: '95%', lg: '325px', borderRadius: '7px'}  ,height:{xs: '200px', 'sm': '300px', lg: '200px'}  , backgroundColor: 'red'}}></Stack>
     </div>
   )
 }
