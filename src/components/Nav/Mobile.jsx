@@ -18,7 +18,7 @@ export default function Mobile() {
 
     
     const DrawerList = (
-        <Box sx={{ width: 250, padding: '1em 0'}} role="presentation" >
+        <Box sx={{ width: {xs: 250, sx: 350, sm: 500}, padding: '1em 0'}} role="presentation" >
            <Button color='red' backgroundColor='purple' onClick={toggleDrawer(false)}>
               <img src={Close} alt='' />
            </Button>

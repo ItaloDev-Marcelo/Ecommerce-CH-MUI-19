@@ -43,10 +43,10 @@ export default function UpSlider({closeZone}) {
       return (
        <Stack  >
            <Stack className='slide-area'>     
-              <Stack  position='relative' top='2em' width='79%' display='flex' alignItems='flex-end'><Button className='close' onClick={closeZone}><img src={CloseIcon} alt=''/> </Button></Stack>
+              <Stack  position='relative' top='-2em' width='105%' display='flex' alignItems='flex-end'><Button className='close' onClick={closeZone}><img src={CloseIcon} alt=''/> </Button></Stack>
               <Stack className='display' component='figure' >
               
-                 <img  src={arrowOfSlider[slide]} alt=''/>
+                 <img  src={arrowOfSlider[slide]} style={{borderRadius:'10px'}}  alt=''/>
                  <Stack className='btn-items' sx={{position: 'relative', left: '-1%', top: '-40rem', zIndex: '1000'}}>
                  <Button className='btn-left' onClick={prevSlider}><KeyboardArrowLeftIcon/></Button>
                  <Button className='btn-right' onClick={nextSlider}><KeyboardArrowRightIcon/></Button>

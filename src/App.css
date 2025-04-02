@@ -156,6 +156,8 @@ h2 {
 }
 
 
+
+
 #orange-btn button::first-letter {
   text-transform: capitalize !important;
 }
@@ -184,22 +186,8 @@ h2 {
     margin-top: 2em;
   }
 
-  figure img {
-    position: relative;
-    max-width: 75%;
-    top: 5rem;
-    left: 0;
-    border-radius: 10px;
-  }
-
-  .btn-itens {
-    display: flex !important;
-    flex-direction: row !important;
-    position: absolute;
-    left:13%;
-    top:55%;
-    width: 74% !important;
-  }
+ 
+  
 
  
   .btn-left, .btn-right {
@@ -211,6 +199,15 @@ h2 {
   
   
 }
+
+/* @media (min-width:1024px) {
+  #informationSection {
+      position: relative;
+      top:5rem;
+  }
+} */
+
+
 
 @media (min-width:1200px){
 
@@ -226,12 +223,16 @@ h2 {
       right: 4rem;
   } 
 
+  button img {
+    border-radius: 7px;
+  }
+
   ul {
     position: relative;
-    top: 5rem;
-    left: .5rem;
+    top: 29rem;
+    left: -5rem;
     list-style: none;
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
   }
@@ -269,12 +270,11 @@ h2 {
 
 .another-slider {
    width: 25% !important;
-   left: 5%;
-   top: 4.5rem;
+   left: -.5%;
+   top:27rem;
 }
 
 .another-slider li {
-
   margin: 0 .7em;
 }
 
@@ -290,6 +290,8 @@ h2 {
 
 }
 
+
+
 @media (min-width:1440px){
   .header::after {
     content: '';
@@ -300,5 +302,11 @@ h2 {
     bottom: 15%;
     left:10%;
     opacity: .2;
+  }
+
+
+  #subSlide-Container {
+    top: -13rem !important;
+    transform: scale(1.3);
   }
 }

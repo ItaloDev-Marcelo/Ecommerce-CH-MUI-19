@@ -31,10 +31,10 @@ export default function SlideDeskDevices() {
 
     return (
        <>
-        <Stack className='left'>
+        <Stack className='left' sx={{position: 'relative', top: '2.5rem'}}>
            <Stack component='div'>
            <Stack className='display' component='figure' >
-             <Button className='display-image' onClick={closeZone} sx={{border:'none', bakground: 'transparent'}} >
+             <Button className='display-image' onClick={closeZone} sx={{border:'10px', bakground: 'transparent'}} >
              <img src={arrowOfSlider[displayImage]} alt='' />
              </Button>
            </Stack>
@@ -48,7 +48,7 @@ export default function SlideDeskDevices() {
            </Stack>
            </Stack>
         </Stack>
-        {newSlider && <Stack zIndex='100' className={newSlider ? 'subSlder active': 'subSlder'}   > <Stack  maxWidth='44%' position='relative' top='-2em'><UpSlider closeZone={closeZone}  /></Stack> </Stack> } 
+        {newSlider && <Stack zIndex='100' className={newSlider ? 'subSlder active': 'subSlder'}   > <Stack id='subSlide-Container'  maxWidth='75%'   position='relative' top='-6em'><UpSlider closeZone={closeZone}  /></Stack> </Stack> } 
         </>
     )
 }

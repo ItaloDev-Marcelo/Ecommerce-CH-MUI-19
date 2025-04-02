@@ -14,7 +14,7 @@ export default function Desk() {
      
    
         <Box>
-             <AppBar className='header' sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'3em 10em ', alignItems:'center', boxShadow: 'none'}} color='inherit'  >
+          <AppBar className='header' sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'3em 10em ', alignItems:'center', boxShadow: 'none'}} color='inherit'  >
            <Box sx={{display:'flex', flexDirection:'row'}}>
            <IconButton>
                <img src={Logo} alt='' title='help' />
@@ -31,8 +31,9 @@ export default function Desk() {
             <NavLeft/>
            </Box>
 
-      </AppBar>
+          </AppBar>
         </Box>
+        
 
   )
 }
