@@ -21,30 +21,30 @@ export default function Cart() {
 
   return (
     <div>
-         <Badge badgeContent={show ? cart : 0} onClick={OpenMenu} color='warning'>
+         <Badge badgeContent={show ? cart : 0} onClick={OpenMenu} color='hsl(26, 100%, 55%)'>
         <Stack width={{xs: '25px', lg: '20px'}}>
         <img src={CartIcon} alt='cart icon' />
         </Stack>
      </Badge>
 
-       <Stack display={Result} justifyContent='center' position='absolute' top={{xs: '5.5rem', lg: '10rem'}} right={{xs: '.6rem', lg: '15em'}} sx={{width: {xs: '340px', sm: '95%', lg: '325px', borderRadius: '7px'}  ,height:{xs: '200px', 'sm': '300px', lg: '200px'}  , backgroundColor: '#fff', boxShadow: '1px 1px 3px #000'}}>
-            <Typography component='h5' padding='1em'>Cart</Typography>
+       <Stack display={Result} justifyContent='center' position='absolute' top={'8em'} right={{xs: '.6rem', lg: '15em'}} sx={{width: {xs: '340px', sm: '95%', lg: '325px', borderRadius: '7px'}  ,height:{xs: '200px', 'sm': '300px', lg: '200px'}  , backgroundColor: '#fff', boxShadow: '1px 1px 3px #000'}}>
+            <Typography component='h5' padding='1em' fontWeight='bold'>Cart</Typography>
             <hr/>
             {
               cart > 0 ?    <Stack id='container' display='flex' flexDirection='column'>
-              <Stack display='flex' flexDirection='row' alignContent='center'>
-                <Stack id='block-miniatura'>
-                   <img src={Mini} alt='' />
+              <Stack display='flex' flexDirection='row' marginTop='1em' padding='1em' justifyContent='space-between' alignContent='center'>
+                <Stack id='block-miniatura' marginRight='1em'>
+                   <img src={Mini} style={{width: '40px', borderRadius: '4px'}} alt='' />
                 </Stack>
-                <Stack id='information-cart'>
-                  <Typography component='p'>Fall Limited Edition Sneakers $125.00 {cart} <strong> {price} </strong> </Typography>
+                <Stack id='information-cart' >
+                  <Typography component='p'  width='210px'>Fall Limited Edition Sneakers $125.00  x{cart} <strong> ${price.toFixed(2) } </strong> </Typography>
                 </Stack>
-                <Stack id='lixeira'>
+                <Stack id='lixeira' sx={{position: 'relative', right: '1em'}} alignSelf='center'>
                    <Button onClick={Delete}><img src={Lixo} alt='' /></Button>
                 </Stack>
              </Stack>
-             <Button>Checkout</Button>
-              </Stack> : <Typography component='h5' marginTop='4em' display='flex' justifyContent='center'  textAlign='center' >Your Cart is empty.</Typography>
+             <Button sx={{backgroundColor: 'hsl(26, 100%, 55%)',color: '#000', margin: '0 1em', height:'40px', textTransform: 'capitalize', fontWeight: 'bold', borderRadius: '7px'}}>Checkout</Button>
+              </Stack> : <Typography component='h5' marginTop='4em' display='flex' justifyContent='center'  textAlign='center' > <strong>Your Cart is empty.</strong> </Typography>
             }            
        </Stack>
     </div>
