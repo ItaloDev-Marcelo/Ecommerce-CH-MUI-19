@@ -107,6 +107,8 @@ figure img {
 }
 
 
+
+
 .btn-itens button{
   background-color: #fff !important;
   transform: scale(.8);
@@ -241,6 +243,18 @@ h2 {
       width: 100%;
       right: 4rem;
   } 
+
+  .btn-arrow {
+    color: #000 !important;
+  }
+
+  .btn-arrow:hover{
+    color: var(--Orange) !important;
+  }
+
+  .avatar-icon:hover {
+    border: 2px solid orange !important;
+  }
 
   button img {
     border-radius: 7px;

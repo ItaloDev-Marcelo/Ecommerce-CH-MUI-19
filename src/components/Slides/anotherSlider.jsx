@@ -44,13 +44,20 @@ export default function UpSlider({closeZone}) {
        <Stack  >
            <Stack className='slide-area'>     
               <Stack  position='relative' top='-2em' width='105%' display='flex' alignItems='flex-end'><Button className='close' onClick={closeZone}><img src={CloseIcon} alt=''/> </Button></Stack>
-              <Stack className='display' component='figure' >
+              <Stack className='display' position='relative'  top='-1em' component='figure' >
               
                  <img  src={arrowOfSlider[slide]} style={{borderRadius:'10px'}}  alt=''/>
-                 <Stack className='btn-items' sx={{position: 'relative', left: '-1%', top: '-40rem', zIndex: '1000'}}>
-                 <Button className='btn-left' onClick={prevSlider}><KeyboardArrowLeftIcon/></Button>
-                 <Button className='btn-right' onClick={nextSlider}><KeyboardArrowRightIcon/></Button>
-                
+                 <Stack className='bt' sx={{position: 'absolute', left: '1%', top: '13rem', zIndex: '1000', display: 'inline-block'}}>
+                 <Button className='btn-arrow'  sx={{backgroundColor: '#fff', position: 'absolute', left: '-2rem',  borderRadius: '50%',
+        width: 50,
+        height: 50,
+        minWidth: 0,
+        padding: 0}} onClick={prevSlider}><KeyboardArrowLeftIcon/></Button>
+                 <Button className='btn-arrow'  sx={{backgroundColor: '#fff', position: 'absolute', left: '26rem',  borderRadius: '50%',
+        width: 50,
+        height: 50,
+        minWidth: 0,
+        padding: 0,}}  onClick={nextSlider}><KeyboardArrowRightIcon   /></Button>
                  </Stack>
                </Stack>
                

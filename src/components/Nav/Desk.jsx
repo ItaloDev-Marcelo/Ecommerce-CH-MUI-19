@@ -1,9 +1,8 @@
 
-import { AppBar, IconButton, Button, Stack} from '@mui/material';
+import { AppBar, IconButton, Button} from '@mui/material';
 import Logo from '../../assets/images/logo.svg';
 import NavLeft from '../NavLeft/index'
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
 
 export default function Desk() {
 
