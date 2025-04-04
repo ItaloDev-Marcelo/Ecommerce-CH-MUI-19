@@ -20,11 +20,11 @@ export default function Desk() {
                <img src={Logo} alt='' title='help' />
            </IconButton>
            <Box className='row-links' sx={{display: 'flex', alignItems: 'center', width: '470px',  marginLeft: '4em', justifyContent: 'space-between'}}>
-           <Button sx={{textTransform: 'capitalize', color: 'gray'}} >Collections</Button>
-           <Button sx={{textTransform: 'capitalize', color: 'gray'}}  >Men</Button>
-           <Button sx={{textTransform: 'capitalize', color: 'gray'}} >Women</Button>
-           <Button sx={{textTransform: 'capitalize', color: 'gray'}} >About</Button>
-           <Button sx={{textTransform: 'capitalize', color: 'gray'}} >Contatc</Button>
+           <Button className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}} >Collections</Button>
+           <Button  className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}}  >Men</Button>
+           <Button  className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}} >Women</Button>
+           <Button  className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}} >About</Button>
+           <Button  className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}} >Contatc</Button>
            </Box>
            </Box>
            <Box>

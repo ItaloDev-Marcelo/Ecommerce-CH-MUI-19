@@ -43,7 +43,7 @@ export default function Cart() {
                    <Button onClick={Delete}><img src={Lixo} alt='' /></Button>
                 </Stack>
              </Stack>
-             <Button sx={{backgroundColor: 'hsl(26, 100%, 55%)',color: '#000', margin: '0 1em', height:'40px', textTransform: 'capitalize', fontWeight: 'bold', borderRadius: '7px'}}>Checkout</Button>
+             <Button className='btn-orange' sx={{backgroundColor: 'hsl(26, 100%, 55%)',color: '#000', margin: '0 1em', height:'40px', textTransform: 'capitalize', fontWeight: 'bold', borderRadius: '7px'}}>Checkout</Button>
               </Stack> : <Typography component='h5' marginTop='4em' display='flex' justifyContent='center'  textAlign='center' > <strong>Your Cart is empty.</strong> </Typography>
             }            
        </Stack>

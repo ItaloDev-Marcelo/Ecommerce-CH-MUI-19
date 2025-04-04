@@ -30,8 +30,8 @@ export default function Information() {
                 <Button disabled sx={{fontWeight: 700, fontSize: '1.1em', position: 'relative', left: '-.5em'}}  > {cart} </Button>
                 <Button sx={{position: 'relative', left: {lg: '-1.2em'}}} onClick={Up} ><img src={plus} alt='minus'/> </Button>
                </Stack>
-               <Button onClick={ShowTme} id='orange-btn' sx={{backgroundColor: 'hsl(26, 100%, 55%)',color: '#000', marginLeft: {lg: '1em'} ,
-               fontWeight: 700, textTransform: 'lowercase', width: '100%',padding: '1em 0', height: '50px', marginTop: '1rem', borderRadius: '10px',textTransform: 'lowercase'}}> <img src={Cart} alt='cart-icon' style={{width: '20px', marginRight: '1em'}} />  <Typography  fontWeight='700' textTransform='capitalize'>A</Typography>  dd to cart</Button>
+               <Button className='btn-orange' onClick={ShowTme} id='orange-btn' sx={{backgroundColor: 'hsl(26, 100%, 55%)',color: '#000', marginLeft: {lg: '1em'} ,
+               fontWeight: 700, textTransform: 'lowercase', width: '100%',padding: '1em 0', height: '50px', marginTop: '1rem', borderRadius: '10px',textTransform: 'lowercase'}}> <img src={Cart} alt='cart-icon' id='cart-icon' style={{width: '20px', marginRight: '1em'}} />  <Typography  fontWeight='700' textTransform='capitalize'>A</Typography>  dd to cart</Button>
             </Stack>
       
          </Stack>

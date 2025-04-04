@@ -36,7 +36,7 @@ export default function Mobile() {
 
   return (
      <>
-      <AppBar sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'1em .5em ', alignItems:'center', boxShadow: 'none'}} color='inherit' >
+      <AppBar sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'1em 0 ', alignItems:'center', boxShadow: 'none'}} color='inherit' >
            <Box>
            <Button color='red' backgroundColor='purple' onClick={toggleDrawer(true)}>
               <img src={Menu} alt='' />
@@ -45,7 +45,7 @@ export default function Mobile() {
                <img src={Logo} alt='' />
            </IconButton>
            </Box>
-           <Box>
+           <Box sx={{marginRight: '1em'}}>
             <NavLeft/>
            </Box>
       </AppBar>
