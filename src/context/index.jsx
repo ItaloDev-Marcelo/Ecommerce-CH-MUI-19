@@ -9,7 +9,10 @@ export default function GlobalState({children}) {
 
     const Up  = () => setCart(prev => prev + 1);
     const Down  = () => setCart(prev => prev <= 0 ? 0 : prev - 1);
-    const Delete = () => setCart(0)
+    const Delete = () => {
+        setCart(0)
+        setShow(prev => !prev)
+    }
     const ShowTme = () => setShow(prev => !prev)
 
     return (

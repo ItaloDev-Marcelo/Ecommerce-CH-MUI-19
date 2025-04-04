@@ -31,7 +31,7 @@ export default function Cart() {
             <Typography component='h5' padding='1em' fontWeight='bold'>Cart</Typography>
             <hr/>
             {
-              cart > 0 ?    <Stack id='container' display='flex' flexDirection='column'>
+              show ?  <Stack id='container' display='flex' flexDirection='column'>
               <Stack display='flex' flexDirection='row' marginTop={{ lg: '1em'}} padding='1em' justifyContent='space-between' alignContent='center'>
                 <Stack id='block-miniatura' marginRight='1em'>
                    <img src={Mini} style={{width: '40px', borderRadius: '4px'}} alt='' />
