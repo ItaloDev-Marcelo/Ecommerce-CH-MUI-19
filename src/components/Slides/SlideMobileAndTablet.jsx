@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Data from './Data/index';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-
+import Img from '../comum-components/image';
 export default function SliderForMobileDevices() {
     
     const [currentSliderItem, setCurrrentSliderItem] = useState(0) 
@@ -26,7 +26,7 @@ export default function SliderForMobileDevices() {
             {
               Data.map((slideImg, index) => {
                  return (
-                     index === currentSliderItem && <div className='slide'><img key={index} src={slideImg.img} alt=''/></div>
+                     index === currentSliderItem && <div className='slide'><Img key={index} imageUrl={slideImg.img} chose={0}/></div>
                  )
               } )
             }

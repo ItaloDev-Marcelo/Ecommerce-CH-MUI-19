@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AppBar, Button, IconButton  } from '@mui/material';
-import Logo from '../../assets/images/logo.svg';
-import Close from  '../../assets/images/icon-close.svg';
-import Menu from  '../../assets/images/icon-menu.svg';
 import NavLeft from '../NavLeft/index'
-
-
+import ImageBank from '../comum-components/imageBank';
+import Img from '../comum-components/image';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 export default function Mobile() {
+
+   const {Logo, Close, Menu} = ImageBank
 
     const [open, setOpen] = useState(false);
 
@@ -20,7 +19,7 @@ export default function Mobile() {
     const DrawerList = (
         <Box sx={{ width: {xs: 250, sx: 350, sm: 500}, padding: '1em 0'}} role="presentation" >
            <Button color='red' backgroundColor='purple' onClick={toggleDrawer(false)}>
-              <img src={Close} alt='' />
+              <Img imageUrl={Close} chose={0} />
            </Button>
            <ul id='menu-list'>
               <li>Collections</li>
@@ -39,10 +38,10 @@ export default function Mobile() {
       <AppBar sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'1em 0 ', alignItems:'center', boxShadow: 'none'}} color='inherit' >
            <Box>
            <Button color='red' backgroundColor='purple' onClick={toggleDrawer(true)}>
-              <img src={Menu} alt='' />
+              <Img imageUrl={Menu} chose={0} />
            </Button>
            <IconButton>
-               <img src={Logo} alt='' />
+               <Img imageUrl={Logo} chose={0} />
            </IconButton>
            </Box>
            <Box sx={{marginRight: '1em'}}>

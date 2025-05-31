@@ -1,11 +1,13 @@
 
 import { AppBar, IconButton, Button} from '@mui/material';
-import Logo from '../../assets/images/logo.svg';
 import NavLeft from '../NavLeft/index'
 import Box from '@mui/material/Box';
-
+import ImageBank from '../comum-components/imageBank';
+import Img from '../comum-components/image';
 export default function Desk() {
 
+
+  const {Logo} = ImageBank
 
 
 
@@ -16,7 +18,7 @@ export default function Desk() {
           <AppBar className='header' sx={{display:'flex', flexDirection:'row', justifyContent:'space-between', padding:'3em 10em ', alignItems:'center', boxShadow: 'none'}} color='inherit'  >
            <Box sx={{display:'flex', flexDirection:'row'}}>
            <IconButton>
-               <img src={Logo} alt='' title='help' />
+               <Img imageUrl={Logo} chose={0} />
            </IconButton>
            <Box className='row-links' sx={{display: 'flex', alignItems: 'center', width: '470px',  marginLeft: '4em', justifyContent: 'space-between'}}>
            <Button className='btn-item' sx={{textTransform: 'capitalize', color: 'gray'}} >Collections</Button>

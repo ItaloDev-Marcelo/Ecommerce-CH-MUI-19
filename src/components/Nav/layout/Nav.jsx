@@ -1,9 +1,9 @@
 import {Stack, Box} from '@mui/material';
-import Mobile from '../Nav/Mobile';
-import Desk from '../Nav/Desk'
+import Mobile from '../Mobile';
+import Desk from '../Desk'
 
 
-export default function Navbar() {
+export default function NavLayout() {
 
   return (
         <Box>
