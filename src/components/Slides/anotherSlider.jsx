@@ -32,8 +32,6 @@ export default function UpSlider({closeZone}) {
       }
 
 
-      
-
 
       return (
        <Stack  >
@@ -47,7 +45,7 @@ export default function UpSlider({closeZone}) {
         height: 50,
         minWidth: 0,
         padding: 0}} onClick={prevSlider}><KeyboardArrowLeftIcon/></Button>
-                 <Button className='btn-arrow'  sx={{backgroundColor: '#fff', position: 'absolute', left: '26rem',  borderRadius: '50%',
+                 <Button className='btn-arrow'  sx={{backgroundColor: '#fff', position: 'absolute', left: '22.7rem',  borderRadius: '50%',
         width: 50,
         height: 50,
         minWidth: 0,

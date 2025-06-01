@@ -1,4 +1,4 @@
-import Nav from '../components/Nav/Nav'
+import Nav from '../components/Nav/layout/Nav'
 import { Stack } from '@mui/material';
 import SlideMobileAndTablet from '../components/Slides/SlideMobileAndTablet'
 import SlideDeskDevices from '../components/Slides/SlideDeskDevices';
@@ -13,7 +13,7 @@ export default function EcommerceLayout() {
         <Stack display={{ xs: 'block', lg: 'none' }}>
           <SlideMobileAndTablet />
         </Stack>
-        <Stack display={{ xs: 'none', lg: 'block' }}>
+        <Stack display={{ xs: 'none', lg: 'block' }}  >
           <SlideDeskDevices />
         </Stack>
         <Stack sx={{ position: 'relative', top: { xs: '23rem', lg: '0' }, padding: '2em' }}>

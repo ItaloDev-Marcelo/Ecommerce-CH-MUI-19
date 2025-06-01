@@ -324,15 +324,40 @@ h2 {
 }
 
 
+@media (min-width:1366px) {
+    .display .display-image  {
+    top: 2rem;
+  } 
+
+   .header::after {
+    bottom: 20%;
+  }
+
+  
+.fix{
+  position:relative;
+  top: -1em;
+}
+
+
+
+}
+
 
 @media (min-width:1440px){
+
+
+    .display .display-image  {
+    top: -.5rem;
+  } 
+
   .header::after {
     content: '';
     display: block;
     width: 80%;
     background-color: gray;
     position: absolute;
-    bottom: 15%;
+    bottom: 19%;
     left:10%;
     opacity: .2;
   }
