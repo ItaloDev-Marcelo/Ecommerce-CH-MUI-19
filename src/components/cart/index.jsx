@@ -1,37 +1,37 @@
 
 import {Stack, Typography, Button} from '@mui/material'
 import Badge from '@mui/material/Badge';
-import {useContext, useState} from 'react'
+import {useContext} from 'react'
 import {GlobalContext} from  '../../context/index';
 import  Img from '../comum-components/image';
 import ImageBank from '../comum-components/imageBank';
+import useCart from './hook/useCart';
 
 export default function Cart() {
-
-   const {cart, Delete, show } =  useContext(GlobalContext)
-   const [open, setOpen] = useState(false) 
-   const Result =  open ? 'block' : 'none';
-   let price = 125.00 * cart;
-   const  { Lixo , Mini, CartIcon} = ImageBank
-
-   const OpenMenu = () => {
-       setOpen(prev => !prev)
-   }
+    
+    const  { Lixo , Mini, CartIcon} = ImageBank
+    const {cart, Delete, show } =  useContext(GlobalContext)
+    const {OpenMenu , Result, price, flipH01}  = useCart() 
+  
 
    const style1  =  {
     width: '40px',
      borderRadius: '4px'
     }
 
+
   return (
     <div>
-         <Badge badgeContent={show ? cart : 0} onClick={OpenMenu} color='warning' >
+    <Badge badgeContent={show ? cart : 0} onClick={OpenMenu} color='warning' >
         <Stack width={{xs: '25px', lg: '20px'}}>
            <Img imageUrl={CartIcon}  chose={0} />
         </Stack>
      </Badge>
 
-       <Stack display={Result} justifyContent='center' position='absolute' top={'8em'} right={{xs: '.6rem', lg: '15em'}} sx={{width: {xs: '340px', sm: '95%', lg: '325px', borderRadius: '7px'}  ,height:{xs: '200px', 'sm': '300px', lg: 'auto'}  , backgroundColor: '#fff', boxShadow: '1px 1px 3px #000'}}>
+       <Stack display={Result} justifyContent='center' position='absolute' top={'8em'}
+        right={{xs: '.6rem', lg: '15em'}}
+         sx={{width: {xs: '340px', sm: '95%', lg: '325px', borderRadius: '7px'} 
+          , height: { xs: '225px', sm: flipH01, lg: flipH01 }, backgroundColor: '#fff', boxShadow: '1px 1px 3px #000'}}>
             <Typography component='h5' padding='1em' fontWeight='bold'>Cart</Typography>
             <hr/>
             {

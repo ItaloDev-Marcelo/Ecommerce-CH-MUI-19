@@ -1,7 +1,7 @@
 import { useContext} from 'react'
 import { Stack,  Typography , Button} from '@mui/material';
 import {GlobalContext} from  '../../context/index'
-import  Img from '../comum-components/image';
+import Img from '../comum-components/image';
 import ImageBank from '../comum-components/imageBank';
 export default function Information() {
 
